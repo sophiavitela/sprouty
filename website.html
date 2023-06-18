@@ -1,178 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SproutLove</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>SproutLove - Your Non-Profit Group</title> <!-- Replace "Your Non-Profit Group" with your own non-profit group name -->
+  <link rel="stylesheet" href="style.css"> <!-- Link your custom CSS file here -->
 </head>
-
+ 
 <body>
   <header>
-    <div class="heart-animation"></div>
-    <h1>Sprout<span class="heart"></span>Love</h1>
+     <a href="#home" class="logo">
+   <img src="data:image/jpeg;base64,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" alt="Your Non-Profit Group Logo">
+  </a>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#volunteer">Volunteer</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="home">
-      <h2>Welcome to Sprout<span class="heart"></span>Love</h2>
-      <article>
-        <h3>About Us</h3>
-        <p>SproutLove is an environmental organization that focuses on conserving the environment through tree planting and community empowerment.</p>
-        <a href="#about" class="button">Learn More</a>
-      </article>
-    </section>
+  <section id="home">
+    <div class="container">
+      <h1>Your Non-Profit Group</h1>
+      <p>Welcome to our website. We are dedicated to making a positive impact in our community.</p>
+      <a href="#contact" class="btn">Get Involved</a>
+    </div>
+  </section>
 
-    <section id="about">
+  <section id="about">
+    <div class="container">
       <h2>About Us</h2>
-      <article>
-        <h3>Our Mission</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur maximus lectus ac volutpat. Nam laoreet massa vel tristique vestibulum.</p>
-        <div class="slideshow-container">
-          <div class="slide">
-            <img src="https://www.google.com/search?q=gardening+community&rlz=1C1ONGR_enUS1053US1053&sxsrf=APwXEde6NtSPP3wFNBFUj6hKWBY971EU9w:1687101598477&tbm=isch&source=iu&ictx=1&vet=1&fir=o9WS0LzNYmnuoM%252CR3u3sX6qhRcKdM%252C_%253BvWc28e5kAaJlUM%252Cs7dmLq29YZgYvM%252C_%253BEjC7X_8HsF3nNM%252CVsQfYmEZeS5QkM%252C_%253B5J-bIo3J1zwkSM%252CcHQlUJiWyw4HvM%252C_&usg=AI4_-kR5wI3PYTFPsoM0hKK7sMfirBPfug&sa=X&ved=2ahUKEwivmOibj83_AhVrmGoFHXz4AjEQ_h16BAhWEAE#imgrc=5J-bIo3J1zwkSM" alt="Image 1">
-          </div>
-          <div class="slide">
-            <img src="organicgarden.jpg" alt="Image 2">
-          </div>
-          <div class="slide">
-            <img src="image3.jpg" alt="Image 3">
-          </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula non mauris rhoncus accumsan at eget libero.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="service1.jpg" alt="Service 1"> <!-- Replace "service1.jpg" with the path to your own service image -->
+          <h3>Service 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula non mauris rhoncus accumsan at eget libero.</p>
         </div>
-      </article>
-    </section>
+        <div class="card">
+          <img src="service2.jpg" alt="Service 2"> <!-- Replace "service2.jpg" with the path to your own service image -->
+          <h3>Service 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula non mauris rhoncus accumsan at eget libero.</p>
+        </div>
+        <div class="card">
+          <img src="service3.jpg" alt="Service 3"> <!-- Replace "service3.jpg" with the path to your own service image -->
+          <h3>Service 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula non mauris rhoncus accumsan at eget libero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
+  <section id="contact">
+    <div class="container">
       <h2>Contact Us</h2>
-      <article>
-        <h3>Get in Touch</h3>
-        <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
-        <form action="submit_form.php" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Submit">
-        </form>
-      </article>
-    </section>
-
-    <section id="volunteer">
-      <h2>Volunteer</h2>
-      <article>
-        <h3>Join Our Team</h3>
-        <p>If you are passionate about the environment and want to make a difference, we welcome you to join our volunteer program. Together, we can create a greener future.</p>
-        <a href="#contact" class="button">Get Involved</a>
-      </article>
-    </section>
-  </main>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2023 SproutLove All rights reserved.
+    <p>&copy; 2023 Your Non-Profit Group. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script> <!-- Link your custom JavaScript file here -->
 </body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SproutLove</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <header>
-    <div class="heart-animation"></div>
-    <h1>Sprout<span class="heart"></span>Love</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#volunteer">Volunteer</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <h2>Welcome to Sprout<span class="heart"></span>Love</h2>
-      <article>
-        <h3>About Us</h3>
-        <p>SproutLove is an environmental organization that focuses on conserving the environment through tree planting and community empowerment.</p>
-        <a href="#about" class="button">Learn More</a>
-      </article>
-    </section>
-
-    <section id="about">
-      <h2>About Us</h2>
-      <article>
-        <h3>Our Mission</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur maximus lectus ac volutpat. Nam laoreet massa vel tristique vestibulum.</p>
-        <div class="slideshow-container">
-          <div class="slide">
-            <img src="https://www.google.com/search?q=gardening+community&rlz=1C1ONGR_enUS1053US1053&sxsrf=APwXEde6NtSPP3wFNBFUj6hKWBY971EU9w:1687101598477&tbm=isch&source=iu&ictx=1&vet=1&fir=o9WS0LzNYmnuoM%252CR3u3sX6qhRcKdM%252C_%253BvWc28e5kAaJlUM%252Cs7dmLq29YZgYvM%252C_%253BEjC7X_8HsF3nNM%252CVsQfYmEZeS5QkM%252C_%253B5J-bIo3J1zwkSM%252CcHQlUJiWyw4HvM%252C_&usg=AI4_-kR5wI3PYTFPsoM0hKK7sMfirBPfug&sa=X&ved=2ahUKEwivmOibj83_AhVrmGoFHXz4AjEQ_h16BAhWEAE#imgrc=5J-bIo3J1zwkSM" alt="Image 1">
-          </div>
-          <div class="slide">
-            <img src="organicgarden.jpg" alt="Image 2">
-          </div>
-          <div class="slide">
-            <img src="image3.jpg" alt="Image 3">
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <article>
-        <h3>Get in Touch</h3>
-        <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
-        <form action="submit_form.php" method="POST">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <input type="submit" value="Submit">
-        </form>
-      </article>
-    </section>
-
-    <section id="volunteer">
-      <h2>Volunteer</h2>
-      <article>
-        <h3>Join Our Team</h3>
-        <p>If you are passionate about the environment and want to make a difference, we welcome you to join our volunteer program. Together, we can create a greener future.</p>
-        <a href="#contact" class="button">Get Involved</a>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2023 SproutLove All rights reserved.
-  </footer>
-</body>
-
 </html>
